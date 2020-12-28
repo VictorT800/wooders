@@ -35,7 +35,7 @@ p {
 }
 
 .fotos img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .contenedorGrid {
@@ -141,11 +141,15 @@ p {
   margin-top: 10px;
 }
 .boton p {
-  font-size: 34px;
+  font-size: 2em;
   transition: 1s;
 }
 .boton p:hover {
   transform: scale(1.5);
+}
+
+.boton i {
+  padding: 0 4px;
 }
 
 footer {
@@ -153,6 +157,7 @@ footer {
   color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2px 14px;
 }
 
@@ -201,5 +206,15 @@ footer p {
 
   h2 {
     font-size: 26px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .boton p {
+    font-size: 1.4em;
   }
 }
