@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/*background: #fffbf2;*/
+	background-image: url(img/cork-board.png);
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	/*background: #333;*/
+	background-image: url(img/dark_wood.png);
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: space-around;
+	/*overflow: hidden;*/
+}
+
+nav ul li {
+	text-align: center;
+	padding: 20px;
+	font-size: 22px;
+	transition: 0.6s;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: 20px;
+	color: #fff;
+}
+
+nav ul li:hover {
+	background: #006d8a; 
+}
+
+.activo {
+	background: orange;
+}
+
+i {
+	color: #fff;
+}
+
+.boton {
+	display: none;
+}
+
+.central {
+	max-width: 800px;
+	margin: 80px auto;
+}
+.central p {
+	font-size: 3em;
+	text-align: center;
+	color: firebrick;
+}
+.central i {
+	font-size: 7em;
+	color: firebrick;
+	text-align: center;
+	margin: auto;
+	padding-top: 100px;
+}
+
+@media screen and (max-width:800px) {
+	.menu {
+		display: none;
+		flex-direction: column;
+	}
+
+	.boton {
+		display: flex;
+		padding: 18px;
+		font-size: 28px;
+		background-image: url(img/dark_wood.png);
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+}
