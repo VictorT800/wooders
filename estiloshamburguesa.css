@@ -8,6 +8,21 @@ html {
 	background-image: url(img/cork-board.png);
 }
 
+@font-face {
+	font-family: "Comfortaa";
+	src: url("Comfortaa.woff2");
+}
+
+body {
+	font-family: "Comfortaa", cursive;
+	font-size: 25px;
+}
+
+main {
+	/*max-width: 950px;*/
+	margin: auto;
+}
+
 nav {
 	width: 100%;
 	display: flex;
@@ -71,6 +86,39 @@ i {
 	padding-top: 100px;
 }
 
+.fotoinicio {
+	margin: auto;
+	background-image: url(img/skatecontraluz.jpg);
+	height: calc(100vh - 64px);
+	background-size: cover;
+	display: flex;
+}
+
+.fotoinicio h1 {
+	text-align: center;
+	margin: auto;
+	font-size: 60px;
+	color: #fff;
+	text-shadow: 5px 5px 4px #FFD240;
+}
+
+.contenedor-imagen {
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+}
+
+.parallax {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: -1;
+}
+
+.parallax img {
+	max-width: 90%;
+}
+
 @media screen and (max-width:800px) {
 	.menu {
 		display: none;
@@ -82,10 +130,17 @@ i {
 		padding: 18px;
 		font-size: 28px;
 		background-image: url(img/dark_wood.png);
+		cursor: pointer;
 	}
 
 	nav ul {
 		flex-direction: column;
 	}
 
+}
+
+@media screen and (max-width:700px) {
+	.fotoinicio {
+		background-image: url(img/skatecontraluzpeq.jpg);
+	}
 }
